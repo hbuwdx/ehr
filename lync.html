@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lync</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="public/css/style.css">
+    <script type="text/javascript" src="public/js/jquery.min.js"></script>
+    <script type="text/javascript" src="public/js/side.js"></script>
+    <script language="javascript">
+        $(document).ready(function(){
+            $('#list').bxCarousel({
+                display_num: 3,
+                move: 1,
+                prev_image: 'public/image/icon_arrow_left.png',
+                next_image: 'public/image/icon_arrow_right.png',
+                margin: 10
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="panel">
+        <!--Lync直达-->
+        <div id="lync_box">
+                    <ul id="list">
+                        <!--item part-->
+                        <li>
+                            <div id="p_box">
+                                <div class="left"><img src="public/image/face.jpg" width="135" height="135"></div>
+                                <div class="right">
+                                    <div class="name">美国队长（在线）</div>
+                                    <div class="descrption">解答打怪兽问题</div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--item part end-->
+                        <!--item part-->
+                        <li>
+                            <div id="p_box">
+                                <div class="left"><img src="public/image/face.jpg" width="135" height="135"></div>
+                                <div class="right">
+                                    <div class="name">美国队长（离线）</div>
+                                    <div class="descrption">解答打怪兽问题</div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--item part end-->
+                        <!--item part-->
+                        <li>
+                            <div id="p_box">
+                                <div class="left"><img src="public/image/face.jpg" width="135" height="135"></div>
+                                <div class="right">
+                                    <div class="name">钢铁侠（离线）</div>
+                                    <div class="descrption">解答打怪兽问题</div>
+                                </div>
+                            </div>
+                        </li>
+                        <!--item part end-->
+                    </ul>
+        </div>
+    </div>
+</body>
+</html>
