@@ -1,4 +1,4 @@
-ehr
+9 days!
 ===
-
-It is a simple static web site that for parcticing purpose !
+day 1 切图中...
+day 2
