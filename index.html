@@ -6,53 +6,26 @@
     <meta name="description" content="我们致力于打造更温和易用的管理系统营造京东人与系统共成长的生态环境系统，因你而温和!" />
     <title>京东员工自助系统-Soft For You!</title>
     <link rel="stylesheet" href="public/css/index.css">
-    <script type="text/javascript" src="public/js/jquery.min.js"></script>
+    <script type="text/javascript" src="public/js/jquery.1.8.2.js"></script>
     <script type="text/javascript" src="public/js/jQuery.desaturate.js"></script>
     <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script> -->
     <script type="text/javascript">
-    	      var paircount = 0;
 
-      /* If you want to desaturate after page loaded - use onload event
-       * of image.
-      */
-      $(function()
+      jQuery(function($)
       {
-        $(".footer_image").each(function() {
-          var $newthis = $(this);
-          // class for easy switch between color/gray version
-          $newthis.addClass("pair_" + ++paircount);
-          var $cloned = $newthis.clone().attr('id', '');
-          // add cloned after original image, we will switch between
-          // original and cloned later
-          $cloned.insertAfter($newthis).addClass("color").hide();
-          // desaturate original
-          $newthis.desaturate({
-            onswitch: function() {
-              // this functon called after replace image with canvas
-            }
-          });
-          // add events for switch between color/gray versions
-          $cloned.closest(".switched_images").bind("mouseenter mouseleave", desevent);
-        });
+       	$(".box").mouseenter(function(){
+       		$(this).animate({top:"-100%"});
+       	}).mouseleave(function(){
+			$(this).animate({top:"0"});
+       	});
+
+       	$(".grid").eq(0).animate({left:"0"},1000);
+       	$(".grid").eq(1).animate({left:"235px"},1300);
+       	$(".grid").eq(2).animate({left:"470px"},1600);
+       	
+      
+
       });
-
-      function desevent(event) 
-      {
-        var classString = new String($(this).attr('class'));
-        var pair = classString.match(/pair_\d+/);
-
-        if (event.type == 'mouseenter')
-          if ($("#fade:checked").size())
-             $(".des.color", this).fadeIn(500);
-          else
-             $(".des.color", this).show();
-
-        if (event.type == 'mouseleave')
-          if ($("#fade:checked").size())
-            $(".des.color", this).fadeOut(500);
-          else
-            $(".des.color", this).hide();
-      }
     </script>
 </head>
 <body>
@@ -81,7 +54,69 @@
 					<div class='login_problem'>登录有问题？召唤<span class='online_support'>在线支持<span></div>
     			</div>
     		</div>
-    		<div class='image_gallery'></div>
+    		<div class='image_gallery'>
+    			
+    				<div>
+    					<div class="grid " style="left:500px">
+    						<div class="box">
+	    						<div class='box1'><img src="public/image/p1.png" /></div>
+	    						<div class='box2'><img src="public/image/n1.png" /></div>
+    						</div>
+    					</div>
+    					<!-- <div class="grid" style="left:235px"> -->
+    						<div class="grid" style="left:735px">
+    						<div class="box">
+	    						<div class='box1'><img src="public/image/p2.png" /></div>
+	    						<div class='box2'><img src="public/image/n2.jpg" /></div>
+    						</div>
+    					</div>
+    					<!-- <div class="grid" style="left:470px"> -->
+    					<div class="grid" style="left:970px">
+    						<div class="box">
+	    						<div class='box1'><img src="public/image/p3.png" /></div>
+	    						<div class='box2'><img src="public/image/n3.png" /></div>
+    						</div>
+    					</div>
+    					<div class="grid" style="top:145px;">
+    						<div class="box">
+	    						<div class='box1'><img src="public/image/p4.png" /></div>
+	    						<div class='box2'><img src="public/image/n4.jpg" /></div>
+    						</div>
+    					</div>
+    					<div class="grid" style="left:235px;top:145px;">
+    						<div class="box">
+	    						<div class='box1'><img src="public/image/p5.jpg" /></div>
+	    						<div class='box2'><img src="public/image/n5.jpg" /></div>
+    						</div>
+    					</div>
+    					<div class="grid" style="left:470px;top:145px;">
+    						<div class="box">
+	    						<div class='box1'><img src="public/image/p6.png" /></div>
+	    						<div class='box2'><img src="public/image/n6.jpg" /></div>
+    						</div>
+    					</div>
+    					<div class="grid" style="top:290px;">
+    						<div class="box">
+	    						<div class='box1'><img src="public/image/p7.png" /></div>
+	    						<div class='box2'><img src="public/image/n7.jpg" /></div>
+    						</div>
+    					</div>
+    					<div class="grid" style="left:235px;top:290px;">
+    						<div class="box">
+	    						<div class='box1'><img src="public/image/p8.png" /></div>
+	    						<div class='box2'><img src="public/image/n9.jpg" /></div>
+    						</div>
+    					</div>
+    					<div class="grid" style="left:470px;top:290px;">
+    						<div class="box">
+	    						<div class='box1'><img src="public/image/p9.png" /></div>
+	    						<div class='box2'><img src="public/image/n9.jpg" /></div>
+    						</div>
+    					</div>
+    					
+    				</div>
+    			
+    		</div>
     	</div>
     	<div class='footer'>
     		<div>

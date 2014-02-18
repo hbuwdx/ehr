@@ -45,13 +45,20 @@ body{
 	line-height: 6px;
 }
 
+.content{
+	
+}
+
 .login{
-	width:300px;
+	margin-top:286px;
+	margin-left:50px;
+	width:370px;
+	float:left;
 }
 
 .login input{
-	width:220px;
-	height:35px;
+	width:230px;
+	height:38px;
 	font-size: 18px;
 	font-family: "微软雅黑";
 	background-image: url("../image/pink.png");
@@ -85,6 +92,56 @@ body{
 	color: rgb(200,22,35);
 }
 
+.image_gallery{
+	width:720px;
+	float:right;
+	margin-right: 40px;
+	position: relative;
+
+}
+
+.image_gallery > div {
+	width:740px;
+	overflow: hidden;
+}
+
+.image_gallery .grid{
+
+	float:left;
+	margin-bottom:4px;
+	margin-left:4px;
+	border:0;
+	height:141px;
+	width: 241px;
+}
+
+.image_gallery .grid{
+	overflow: hidden;
+	position: absolute;
+}
+
+
+
+
+.image_gallery .grid > div{
+	height:200%;
+	overflow: hidden;
+	position: absolute;
+}
+
+.image_gallery .grid > div > div.box1{
+	
+	
+}
+
+.image_gallery .grid > div > div.box2{
+	
+
+}
+
+.image_gallery image{
+	width:241px;
+}
 
 
 
@@ -93,11 +150,13 @@ body{
 
 
 .footer{
-	margin-top: 10px;
+	padding-top: 20px;
+	clear:left;
 }
 .footer .footer_image{
 	float:left;
 	margin-left:5px;
+	border:0;
 }
 .footer .footer_image1{
 	width: 40px;
