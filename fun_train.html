@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <script type="text/javascript" src="public/js/jquery.min.js"></script>
+    <script language="javascript">
+        $(function(){
+            $(".title").parent().mouseenter(function(){
+                $(this).animate({marginTop:"40px"},"normal");
+            });
+            $(".title").parent().mouseleave(function(){
+                $(this).animate({marginTop:"105px"},"normal");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="panel">
+        <!--功能直通车-->
+        <div id="fun_train">
+            <div id="showbox" class="yellow">
+                <div class="title">假期银行</div>
+                <div class="content"  class="yellow">查看考勤、假期、调休情况</div>
+            </div>
+
+            <div id="showbox" class="green">
+                <div class="title">假期银行</div>
+                <div class="content"  class="green">查看考勤、假期、调休情况</div>
+            </div>
+
+            <div id="showbox" class="blue">
+                <div class="title">假期银行</div>
+                <div class="content"  class="blue">查看考勤、假期、调休情况</div>
+            </div>
+
+            <div id="showbox" class="gray">
+                <div class="title">假期银行</div>
+                <div class="content"  class="gray">查看考勤、假期、调休情况</div>
+            </div>
+
+            <div id="showbox" class="pink">
+                <div class="title">假期银行</div>
+                <div class="content"  class="pink">查看考勤、假期、调休情况</div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
