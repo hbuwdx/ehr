@@ -46,11 +46,11 @@ body{
 }
 
 .content{
-	
+	min-width: 1280px;
 }
 
 .login{
-	margin-top:286px;
+	margin-top:270px;
 	margin-left:50px;
 	width:370px;
 	float:left;
