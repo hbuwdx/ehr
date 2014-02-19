@@ -74,22 +74,30 @@ body{
 .login .image1{
 	margin-left: 5px;
 	width: 100px;
+	border:0;
 }
 
 .login .image2{
 	margin-left: 3px;
 	width: 100px;
+	border:0;
 }
 
 .login_problem{
 	margin-top:10px;
 	font-size:12px;
 	color:rgb(166,166,166);
-		margin-left:72px;
+	margin-left:72px;
 }
 
-.login_problem .online_support{
+.login_problem .online_support a{
 	color: rgb(200,22,35);
+	text-decoration: none;
+}
+
+.login_problem .online_support a:hover{
+	color:rgb(166,166,166);
+
 }
 
 .image_gallery{
@@ -102,7 +110,10 @@ body{
 
 .image_gallery > div {
 	width:740px;
+	height: 440px;
+	
 	overflow: hidden;
+	position: relative;
 }
 
 .image_gallery .grid{
@@ -140,7 +151,7 @@ body{
 }
 
 .image_gallery image{
-	width:241px;
+	width:231px;
 }
 
 

@@ -19,11 +19,22 @@
 			$(this).animate({top:"0"});
        	});
 
-       	$(".grid").eq(0).animate({left:"0"},1000);
-       	$(".grid").eq(1).animate({left:"235px"},1300);
-       	$(".grid").eq(2).animate({left:"470px"},1600);
+       	$(".grid").eq(6).animate({left:"0"},700);
+       	$(".grid").eq(7).animate({left:"235px"},1000);
+       	$(".grid").eq(8).animate({left:"470px"},1300);
        	
       
+      	setTimeout(function(){
+      		$(".grid").eq(3).animate({left:"0"},700);
+	       	$(".grid").eq(4).animate({left:"235px"},1000);
+	       	$(".grid").eq(5).animate({left:"470px"},1300);
+      	},1000);
+
+      	setTimeout(function(){
+      		$(".grid").eq(0).animate({left:"0"},700);
+	       	$(".grid").eq(1).animate({left:"235px"},1000);
+	       	$(".grid").eq(2).animate({left:"470px"},1300);
+      	},2000);
 
       });
     </script>
@@ -48,66 +59,72 @@
     	<div class='content'>
     		<div class='login'>
     			<div>
-    				<div><img class='image1' src="public/image/gray.png" /><img class='image2' src="public/image/red2.png" /></div>
+    				<div><a href="#"><img class='image1' src="public/image/gray.png" /></a><a href="#"><img class='image2' src="public/image/red2.png" /></a></div>
 					<div><input placeholder1="请使用ERP账号登录" /></div>
 					<div><input class='input_password' placeholder1="初始密码身份证号后六位" /></div>
-					<div class='login_problem'>登录有问题？召唤<span class='online_support'>在线支持<span></div>
+					<div class='login_problem'>登录有问题？召唤<span class='online_support'><a href="#">在线支持</a><span></div>
     			</div>
     		</div>
     		<div class='image_gallery'>
     			
     				<div>
-    					<div class="grid " style="left:500px">
+    					<div class="grid " style="left:740px">
     						<div class="box">
 	    						<div class='box1'><img src="public/image/p1.png" /></div>
 	    						<div class='box2'><img src="public/image/n1.png" /></div>
     						</div>
     					</div>
     					<!-- <div class="grid" style="left:235px"> -->
-    						<div class="grid" style="left:735px">
+    						<div class="grid" style="left:975px">
     						<div class="box">
 	    						<div class='box1'><img src="public/image/p2.png" /></div>
 	    						<div class='box2'><img src="public/image/n2.jpg" /></div>
     						</div>
     					</div>
     					<!-- <div class="grid" style="left:470px"> -->
-    					<div class="grid" style="left:970px">
+    					<div class="grid" style="left:1210px">
     						<div class="box">
 	    						<div class='box1'><img src="public/image/p3.png" /></div>
 	    						<div class='box2'><img src="public/image/n3.png" /></div>
     						</div>
     					</div>
-    					<div class="grid" style="top:145px;">
+    					<div class="grid" style="left:740px;top:145px;">
+    					<!-- <div class="grid" style="top:145px;"> -->
     						<div class="box">
 	    						<div class='box1'><img src="public/image/p4.png" /></div>
 	    						<div class='box2'><img src="public/image/n4.jpg" /></div>
     						</div>
     					</div>
-    					<div class="grid" style="left:235px;top:145px;">
+    					<div class="grid" style="left:975px;top:145px;">
+    					<!-- <div class="grid" style="left:235px;top:145px;"> -->
     						<div class="box">
 	    						<div class='box1'><img src="public/image/p5.jpg" /></div>
 	    						<div class='box2'><img src="public/image/n5.jpg" /></div>
     						</div>
     					</div>
-    					<div class="grid" style="left:470px;top:145px;">
+    					<div class="grid" style="left:1210px;top:145px;">
+    					<!-- <div class="grid" style="left:470px;top:145px;"> -->
     						<div class="box">
 	    						<div class='box1'><img src="public/image/p6.png" /></div>
 	    						<div class='box2'><img src="public/image/n6.jpg" /></div>
     						</div>
     					</div>
-    					<div class="grid" style="top:290px;">
+    					<div class="grid" style="top:290px;left:740px">
+    					<!-- <div class="grid" style="top:290px;"> -->
     						<div class="box">
 	    						<div class='box1'><img src="public/image/p7.png" /></div>
 	    						<div class='box2'><img src="public/image/n7.jpg" /></div>
     						</div>
     					</div>
-    					<div class="grid" style="left:235px;top:290px;">
+    					<div class="grid" style="left:975px;top:290px;">
+    					<!-- <div class="grid" style="left:235px;top:290px;"> -->
     						<div class="box">
 	    						<div class='box1'><img src="public/image/p8.png" /></div>
 	    						<div class='box2'><img src="public/image/n9.jpg" /></div>
     						</div>
     					</div>
-    					<div class="grid" style="left:470px;top:290px;">
+    					<div class="grid" style="left:1210px;top:290px;">
+    					<!-- <div class="grid" style="left:470px;top:290px;"> -->
     						<div class="box">
 	    						<div class='box1'><img src="public/image/p9.png" /></div>
 	    						<div class='box2'><img src="public/image/n9.jpg" /></div>
