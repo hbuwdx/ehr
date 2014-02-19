@@ -44,8 +44,28 @@ body{ font-family:"Microsoft Yahei", "微软雅黑", Tahoma, Arial, sans-serif}
 .borad:hover a{color: #ee0000;}
 
 /* 工作流提醒 */
-#tab{width: 98%}
+#tab{width: 100%;margin: 0 auto}
 #tab .tab_title,#tab .tab_content,#tab .content{width: 100%}
-#tab .title{width: 100px;float: left}
-#tab .tab_title,#tab .title{height: 45px}
-#tab .tab_content,#tab .content{height: 150px;background:#fdedee }
+#tab .title{width: 100px;float: left;}
+#tab .tab_title,#tab .title{height: 35px;line-height: 45px;margin-left: 1px}
+#tab .tab_content,#tab .content{padding:10px;height: 150px;text-align: center}
+#tab .part{width: 100px;margin:0 20px;display: inline-block;text-align: center}
+#tab .num{font-size:55px;}
+.bg_color{background:#fdedee;}
+.font_yellow{color:#ed6d00;}
+.font_green{color:#9cc813;}
+.font_blue{color:#1dbae5;}
+.font_gray{color:#bf9e5b;}
+.font_pink{color:#e4015a;}
+
+/*圆角CSS*/
+.b1,.b2,.b3,.b4,.b{display:block;overflow:hidden;}
+.b1{height:3px;}
+.b2,.b3,.b4{height:2px;}
+.b2,.b3,.b4,.b{border-left:2px solid #bfbfbf;border-right:2px solid #bfbfbf;}
+.b1{margin:0 5px;background:#1dbae5;}
+.b2{margin:0 3px;}
+.b3{margin:0 2px;}
+.b4{margin:0 1px;}
+.d1{}
+.k {height:27px;line-height: 27px;text-align: center;}
