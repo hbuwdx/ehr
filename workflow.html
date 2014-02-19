@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lync</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="public/css/style.css">
+    <script type="text/javascript" src="public/js/jquery.min.js"></script>
+    <script language="JavaScript">
+        $(function(){
+            $("a.title").click(function(){
+                $("a.title").attr("clicked","0");
+                $(this).attr("clicked","1");
+                var clickNum=0;
+                var title_len=$("a.title").length;
+                for(var i=0;i<title_len;i++){
+                    if($("a.title").eq(i).attr("clicked") && $("a.title").eq(i).attr("clicked") == "1" ){
+                        clickNum=i;
+                    }
+                }
+                var con_len=$(".content").length;
+                for(var i=0;i<con_len;i++){
+                    $(".content").eq(i).hide();
+                }
+                $(".content").eq(clickNum).show();
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div class="panel">
+        <div id="tab">
+            <div class="tab_title">
+                <a class="title">我的申请</a>
+                <a class="title">我的审批</a>
+                <a class="title">我的审批</a>
+            </div>
+            <div class="tab_content">
+                <div class="content">内容1</div>
+                <div class="content">内容2</div>
+                <div class="content">内容3</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
