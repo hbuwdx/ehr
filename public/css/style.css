@@ -1,15 +1,16 @@
 html, body, div, span,table, caption, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
-iframe{overflow: hidden;border: none}
 img{border: 0}
 div{margin: 0 auto}
 a{text-decoration: none}
-body{ font-family:"Microsoft Yahei", "微软雅黑", Tahoma, Arial, sans-serif}
+ul li{list-style-position: none;list-style-type: none;list-style: none;margin: 0}
+body{padding:5px;font-family:"Microsoft Yahei", "微软雅黑", Tahoma, Arial, sans-serif}
 
 /*后台页面样式部分*/
-.panel{width:98%;margin:0 auto;padding:5px;height: auto;overflow: hidden}
+.panel{width:100%;margin:0 auto;height: auto;overflow: hidden}
 
 /*fun_train*/
-#fun_train{    width: 100%;    height: 150px;    margin: 0 auto;    border-bottom: 2px solid #ed6d00;    align-items: center;    overflow: hidden;}
+#fun_train{    width: 100%;    height: 150px;  position:relative;  margin: 0 auto;    border-bottom: 2px solid #ed6d00;   text-align: center;  overflow: hidden;}
+#fun_train ul{margin: 0;padding: 0}
 #showbox{    float: left;    position: relative;    width: 164px;    height: 107px;    margin: 0 10px;    margin-top:105px;}
 #showbox .title{    height: 45px;    font-size: 24px;    line-height: 45px;    text-align: center;    color: #ffffff;}
 #showbox .content{    width: 160px;    height: 60px;    background: #ffffff;    font-size: 20px;    text-align: center;}
@@ -31,7 +32,7 @@ body{ font-family:"Microsoft Yahei", "微软雅黑", Tahoma, Arial, sans-serif}
 
 /* examples_body */
 .bx_wrap { margin-left: 0px;}
-.bx_container{float: left;    overflow: hidden;}
+.bx_container{overflow: hidden;}
 .bx_wrap a.prev {    width: 27px;    height: 150px;    float: left;    line-height: 150px;    outline-style: none;    outline-width: 0;    text-indent: -9999px;    background: url(../image/icon_arrow_left.png) no-repeat left;}
 .bx_wrap a.prev:hover {    background: url(../image/icon_arrow_left.png) no-repeat right;}
 .bx_wrap a.next {    width: 27px;    height: 150px;    float: right;    line-height: 150px;    outline-style: none;    outline-width: 0;    text-indent: -9999px;    background: url(../image/icon_arrow_right.png) no-repeat right;}
@@ -44,13 +45,15 @@ body{ font-family:"Microsoft Yahei", "微软雅黑", Tahoma, Arial, sans-serif}
 .borad:hover a{color: #ee0000;}
 
 /* 工作流提醒 */
-#tab{width: 100%;margin: 0 auto}
+#tab{width: 100%;margin: 0;}
 #tab .tab_title,#tab .tab_content,#tab .content{width: 100%}
 #tab .title{width: 100px;float: left;}
 #tab .tab_title,#tab .title{height: 35px;line-height: 45px;margin-left: 1px}
 #tab .tab_content,#tab .content{padding:10px;height: 150px;text-align: center}
-#tab .part{width: 100px;margin:0 20px;display: inline-block;text-align: center}
+#tab .part{width: 100px;margin:0 10px;display: inline-block;text-align: center}
+#tab .part{*display: inline}
 #tab .num{font-size:55px;}
+#tab .more{margin:10px 0;width: 60px;height: 30px;text-align:center;line-height: 30px;float: right;color:#ffffff;background: #9cc813}
 .bg_color{background:#fdedee;}
 .font_yellow{color:#ed6d00;}
 .font_green{color:#9cc813;}
@@ -60,12 +63,12 @@ body{ font-family:"Microsoft Yahei", "微软雅黑", Tahoma, Arial, sans-serif}
 
 /*圆角CSS*/
 .b1,.b2,.b3,.b4,.b{display:block;overflow:hidden;}
-.b1{height:3px;}
-.b2,.b3,.b4{height:2px;}
-.b2,.b3,.b4,.b{border-left:2px solid #bfbfbf;border-right:2px solid #bfbfbf;}
+.b1{height:2px;}
+.b2,.b3,.b4{height:1px;}
+.b2,.b3,.b4,.b{border-left:1px solid #bfbfbf;border-right:1px solid #bfbfbf;}
 .b1{margin:0 5px;background:#1dbae5;}
 .b2{margin:0 3px;}
 .b3{margin:0 2px;}
 .b4{margin:0 1px;}
 .d1{}
-.k {height:27px;line-height: 27px;text-align: center;}
+.k {height:31px;line-height: 31px;text-align: center;}

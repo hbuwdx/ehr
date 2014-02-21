@@ -5,14 +5,31 @@
     <title></title>
     <link rel="stylesheet" href="public/css/style.css">
     <script type="text/javascript" src="public/js/jquery.min.js"></script>
+    <script type="text/javascript" src="public/js/side.js"></script>
     <script language="javascript">
-        $(function(){
+        function refresh(){
             $(".title").parent().mouseenter(function(){
                 $(this).animate({marginTop:"40px"},"normal");
             });
             $(".title").parent().mouseleave(function(){
                 $(this).animate({marginTop:"105px"},"normal");
             });
+        }
+        $(function(){
+            var len=$("div#showbox").length;
+            var marginLeft=$("div#showbox").css("marginLeft");
+            marginLeft = marginLeft.replace("px","");
+            marginLeft = parseInt(marginLeft);
+//            $("#fun_train").width( ($("div#showbox").eq(0).width()+marginLeft * 2 ) * len);
+            //轮播
+            $('#list').bxCarousel({
+                display_num: 5,
+                move: 5,
+                prev_image: 'public/image/icon_arrow_left.png',
+                next_image: 'public/image/icon_arrow_right.png',
+                margin: 20
+            });
+            refresh();
         });
     </script>
 </head>
@@ -20,30 +37,38 @@
     <div class="panel">
         <!--功能直通车-->
         <div id="fun_train">
-            <div id="showbox" class="yellow">
-                <div class="title">假期银行</div>
-                <div class="content"  class="yellow">查看考勤、假期、调休情况</div>
-            </div>
-
-            <div id="showbox" class="green">
-                <div class="title">假期银行</div>
-                <div class="content"  class="green">查看考勤、假期、调休情况</div>
-            </div>
-
-            <div id="showbox" class="blue">
-                <div class="title">假期银行</div>
-                <div class="content"  class="blue">查看考勤、假期、调休情况</div>
-            </div>
-
-            <div id="showbox" class="gray">
-                <div class="title">假期银行</div>
-                <div class="content"  class="gray">查看考勤、假期、调休情况</div>
-            </div>
-
-            <div id="showbox" class="pink">
-                <div class="title">假期银行</div>
-                <div class="content"  class="pink">查看考勤、假期、调休情况</div>
-            </div>
+            <ul id="list">
+                <li>
+                    <div id="showbox" class="yellow">
+                        <div class="title">假期银行</div>
+                        <div class="content"  class="yellow">查看考勤、假期、调休情况</div>
+                    </div>
+                </li>
+                <li>
+                    <div id="showbox" class="green">
+                        <div class="title">假期银行</div>
+                        <div class="content"  class="green">查看考勤、假期、调休情况</div>
+                    </div>
+                </li>
+                <li>
+                    <div id="showbox" class="blue">
+                        <div class="title">假期银行</div>
+                        <div class="content"  class="blue">查看考勤、假期、调休情况</div>
+                    </div>
+                </li>
+                <li>
+                    <div id="showbox" class="gray">
+                        <div class="title">假期银行</div>
+                        <div class="content"  class="gray">查看考勤、假期、调休情况</div>
+                    </div>
+                </li>
+                <li>
+                    <div id="showbox" class="pink">
+                        <div class="title">假期银行</div>
+                        <div class="content"  class="pink">查看考勤、假期、调休情况</div>
+                    </div>
+                </li>
+            </ul>
 
         </div>
 
