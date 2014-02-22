@@ -13,11 +13,32 @@
 
       jQuery(function($)
       {
-       	$(".box").mouseenter(function(){
-       		$(this).animate({top:"-100%"});
-       	}).mouseleave(function(){
-			$(this).animate({top:"0"});
-       	});
+       	$(".box").each(function(i){
+            if(i !== 4){
+                $(this).mouseenter(function(){
+
+                    $(this).animate({top:"-100%"});
+                });
+            }else if( i == 4){
+                $(this).mouseenter(function(){
+                    $(this).find(".box2").animate({"opacity":1});
+                });
+            }
+        });
+        
+        $(".box").each(function(i){
+            if(i !== 4){
+                $(this).mouseleave(function(){
+                    $(this).animate({top:"0"});
+                })
+            }else if( i == 4){
+                $(this).mouseleave(function(){
+                    $(this).find(".box2").animate({"opacity":0});
+                });
+            }
+        });
+
+        
 
        	$(".grid").eq(6).animate({left:"0"},700);
        	$(".grid").eq(7).animate({left:"235px"},1000);
@@ -43,7 +64,9 @@
     <div class="main">
     	<div class='header'>
     		<div class='title'>
-    			<div class='title_left'>京东员工自助系统</div>
+    			<div class='title_left'>京东员工自助系统
+                <div class='subtitle'>Employee Self Service System</div>
+            </div>
     			<div class='title_right'>
     				<div class='title_right_1'>Soft For You</div>
     				<div class='title_right_2'>
@@ -53,8 +76,8 @@
     				</div>
     			</div>
     		</div>
-    		<div class='sep'></div>
-    		<div class='subtitle'>Employee Self Service System</div>
+    		<div class='sep'>&nbsp;</div>
+    		
     	</div>
     	<div class='content'>
     		<div class='login'>
@@ -70,64 +93,67 @@
     				<div>
     					<div class="grid " style="left:740px">
     						<div class="box">
-	    						<div class='box1'><img src="public/image/p1.png" /></div>
-	    						<div class='box2'><img src="public/image/n1.png" /></div>
+	    						<div class='box1'><a href="#"><img src="public/image/p1.png" /></a></div>
+	    						<div class='box2'><a href="#"><img src="public/image/n1.png" /></a></div>
     						</div>
     					</div>
     					<!-- <div class="grid" style="left:235px"> -->
     						<div class="grid" style="left:975px">
     						<div class="box">
-	    						<div class='box1'><img src="public/image/p2.png" /></div>
-	    						<div class='box2'><img src="public/image/n2.jpg" /></div>
+	    						<div class='box1'><a href="#"><img src="public/image/p2.png" /></a></div>
+	    						<div class='box2'><a href="#"><img src="public/image/n2.jpg" /></a></div>
     						</div>
     					</div>
     					<!-- <div class="grid" style="left:470px"> -->
     					<div class="grid" style="left:1210px">
     						<div class="box">
-	    						<div class='box1'><img src="public/image/p3.png" /></div>
-	    						<div class='box2'><img src="public/image/n3.png" /></div>
+	    						<div class='box1'><a href="#"><img src="public/image/p3.png" /></a></div>
+	    						<div class='box2'><a href="#"><img src="public/image/n3.png" /></a></div>
     						</div>
     					</div>
     					<div class="grid" style="left:740px;top:145px;">
     					<!-- <div class="grid" style="top:145px;"> -->
     						<div class="box">
-	    						<div class='box1'><img src="public/image/p4.png" /></div>
-	    						<div class='box2'><img src="public/image/n4.jpg" /></div>
+	    						<div class='box1'><a href="#"><img src="public/image/p4.png" /></a></div>
+	    						<div class='box2'><a href="#"><img src="public/image/n4.jpg" /></a></div>
     						</div>
     					</div>
     					<div class="grid" style="left:975px;top:145px;">
     					<!-- <div class="grid" style="left:235px;top:145px;"> -->
     						<div class="box">
 	    						<div class='box1'><img src="public/image/p5.jpg" /></div>
-	    						<div class='box2'><img src="public/image/n5.jpg" /></div>
+	    						<div class='box2 cover' >
+                                    <div class="text1">这是一个温文尔雅的管理软件。</div>
+                                    <div class="text2">——关有民</div>
+                                </div>
     						</div>
     					</div>
     					<div class="grid" style="left:1210px;top:145px;">
     					<!-- <div class="grid" style="left:470px;top:145px;"> -->
     						<div class="box">
-	    						<div class='box1'><img src="public/image/p6.png" /></div>
-	    						<div class='box2'><img src="public/image/n6.jpg" /></div>
+	    						<div class='box1'><a href="#"><img src="public/image/p6.png" /></a></div>
+	    						<div class='box2'><a href="#"><img src="public/image/n6.jpg" /></a></div>
     						</div>
     					</div>
     					<div class="grid" style="top:290px;left:740px">
     					<!-- <div class="grid" style="top:290px;"> -->
     						<div class="box">
-	    						<div class='box1'><img src="public/image/p7.png" /></div>
-	    						<div class='box2'><img src="public/image/n7.jpg" /></div>
+	    						<div class='box1'><a href="#"><img src="public/image/p7.png" /></a></div>
+	    						<div class='box2'><a href="#"><img src="public/image/n7.jpg" /></a></div>
     						</div>
     					</div>
     					<div class="grid" style="left:975px;top:290px;">
     					<!-- <div class="grid" style="left:235px;top:290px;"> -->
     						<div class="box">
-	    						<div class='box1'><img src="public/image/p8.png" /></div>
-	    						<div class='box2'><img src="public/image/n9.jpg" /></div>
+	    						<div class='box1'><a href="#"><img src="public/image/p8.png" /></a></div>
+	    						<div class='box2'><a href="#"><img src="public/image/n9.jpg" /></a></div>
     						</div>
     					</div>
     					<div class="grid" style="left:1210px;top:290px;">
     					<!-- <div class="grid" style="left:470px;top:290px;"> -->
     						<div class="box">
-	    						<div class='box1'><img src="public/image/p9.png" /></div>
-	    						<div class='box2'><img src="public/image/n9.jpg" /></div>
+	    						<div class='box1'><a href="#"><img src="public/image/p9.png" /></a></div>
+	    						<div class='box2'><a href="#"><img src="public/image/n9.jpg" /></a></div>
     						</div>
     					</div>
     					
