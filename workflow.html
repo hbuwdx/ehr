@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lync</title>
+    <title></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="public/css/style.css">
     <script type="text/javascript" src="public/js/jquery.min.js"></script>
@@ -9,6 +9,8 @@
         $(function(){
             $("a.title").click(function(){
                 $("a.title").attr("clicked","0");
+                $(".k,.d1").removeClass("bg_color");
+                $(this).find(".k,.d1").addClass("bg_color");
                 $(this).attr("clicked","1");
                 var clickNum=0;
                 var title_len=$("a.title").length;
@@ -23,6 +25,8 @@
                 }
                 $(".content").eq(clickNum).show();
             });
+            $("a.title").eq(0).trigger("click");
+
         });
 
     </script>
@@ -31,15 +35,51 @@
     <div class="panel">
         <div id="tab">
             <div class="tab_title">
-                <a class="title">我的申请</a>
-                <a class="title">我的审批</a>
-                <a class="title">我的审批</a>
+                <!--tab1-->
+                <a class="title" style="margin-left: 0px">
+                        <b class="b1" style="background: #ed6d00"></b>
+                        <b class="b2 d1"></b>
+                        <b class="b3 d1"></b>
+                        <b class="b4 d1"></b>
+                        <div class="b d1 k">我的申请</div>
+                </a>
+                <!--tab1-->
+                <!--tab2-->
+                <a class="title">
+                    <b class="b1" style="background: #1dbae5" ></b>
+                    <b class="b2 d1"></b>
+                    <b class="b3 d1"></b>
+                    <b class="b4 d1"></b>
+                    <div class="b d1 k">我的审批</div>
+                </a>
+                <!--tab2-->
             </div>
-            <div class="tab_content">
-                <div class="content">内容1</div>
-                <div class="content">内容2</div>
-                <div class="content">内容3</div>
+            <div class="tab_content bg_color">
+                <!--单页部分开始-->
+                <div class="content">
+                    <div class="part">
+                        <span class="num font_yellow">18</span><br/><span>未审批</span>
+                    </div>
+                    <div class="part">
+                        <span class="num font_yellow">109</span><br/><span>待审批</span>
+                    </div>
+                    <div class="part">
+                        <span class="num font_yellow">109</span><br/><span>待审批</span>
+                    </div>
+                </div>
+                <!--单页部分结束-->
+                <!--单页部分开始-->
+                <div class="content">
+                    <div class="part">
+                        <span class="num font_blue">18</span><br/><span>未审批</span>
+                    </div>
+                    <div class="part">
+                        <span class="num font_blue">109</span><br/><span>待审批</span>
+                    </div>
+                </div>
+                <!--单页部分结束-->
             </div>
+            <div class="more">更多</div>
         </div>
     </div>
 </body>
