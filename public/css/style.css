@@ -3,7 +3,7 @@ img{border: 0}
 div{margin: 0 auto}
 a{text-decoration: none}
 ul li{list-style-position: none;list-style-type: none;list-style: none;margin: 0}
-body{padding:5px;font-family:"Microsoft Yahei", "微软雅黑", Tahoma, Arial, sans-serif}
+body{padding:10px;font-family:"Microsoft Yahei", "微软雅黑", Tahoma, Arial, sans-serif}
 
 /*后台页面样式部分*/
 .panel{width:100%;margin:0 auto;height: auto;overflow: hidden}
@@ -16,26 +16,34 @@ body{padding:5px;font-family:"Microsoft Yahei", "微软雅黑", Tahoma, Arial, s
 #showbox .content{    width: 160px;    height: 60px;    background: #ffffff;    font-size: 20px;    text-align: center;}
 .line{    height: 2px;    background:#ed6d00 ;}
 .yellow{background: #ed6d00;color:#ed6d00;}
+.yellow a{color:#ed6d00;}
 .green{background: #9cc813;color:#9cc813;}
+.green a{color:#9cc813;}
 .blue{background: #1dbae5;color:#1dbae5;}
+.blue a{color:#1dbae5;}
 .gray{background: #bf9e5b;color:#bf9e5b;}
+.gray a{color:#bf9e5b;}
 .pink{background: #e4015a;color:#e4015a;}
+.pink a{color:#e4015a;}
 
 /*Lync页面*/
 #lync_box{ width:98%;}
-#p_box{width: 330px;height: 150px;padding: 0;float: left;}
+#lync_box ul{margin: 0;padding: 0}
+#p_box{width: 310px;height: 150px;padding: 0;float: left; margin-left: 10px;margin-top: 20px}
 #p_box .left{width: 135px;height: 135px;float: left;}
-#p_box .right{width: 180px;height: 135px;float: left;padding: 5px;}
-#p_box .name,#p_box .descrption{ width: 180px;height: 40px; font-size: 18px;line-height: 40px;padding: 0 10px;}
+#p_box .right{width: 165px;height: 135px;float: left;padding: 5px;}
+#p_box .name,#p_box .descrption{ width: 180px;height: 40px; font-size: 19px;line-height: 40px;padding: 0 10px;}
 #p_box .name{margin-top: 40px;}
+#p_box .name a{color: #000000}
 #p_box .descrption{color: #a7a7a7;}
+#p_box .descrption a{color: #a7a7a7;}
 
 /* examples_body */
 .bx_wrap { margin-left: 0px;}
 .bx_container{overflow: hidden;}
-.bx_wrap a.prev {    width: 27px;    height: 150px;    float: left;    line-height: 150px;    outline-style: none;    outline-width: 0;    text-indent: -9999px;    background: url(../image/icon_arrow_left.png) no-repeat left;}
-.bx_wrap a.prev:hover {    background: url(../image/icon_arrow_left.png) no-repeat right;}
-.bx_wrap a.next {    width: 27px;    height: 150px;    float: right;    line-height: 150px;    outline-style: none;    outline-width: 0;    text-indent: -9999px;    background: url(../image/icon_arrow_right.png) no-repeat right;}
+.bx_wrap a.prev { opacity:0; width: 27px;    height: 150px;    float: left;    line-height: 150px;    outline-style: none;    outline-width: 0;    text-indent: -9999px;    background: url(../image/icon_arrow_left.png) no-repeat left;}
+.bx_wrap a.prev:hover { background: url(../image/icon_arrow_left.png) no-repeat left;}
+.bx_wrap a.next { opacity:0;width: 27px;    height: 150px;    float: right;    line-height: 150px;    outline-style: none;    outline-width: 0;    text-indent: -9999px;    background: url(../image/icon_arrow_right.png) no-repeat left;}
 .bx_wrap a.next:hover {    background: url(../image/icon_arrow_right.png) no-repeat left;}
 
 /* 提醒页面*/
@@ -47,19 +55,27 @@ body{padding:5px;font-family:"Microsoft Yahei", "微软雅黑", Tahoma, Arial, s
 /* 工作流提醒 */
 #tab{width: 100%;margin: 0;}
 #tab .tab_title,#tab .tab_content,#tab .content{width: 100%}
-#tab .title{width: 100px;float: left;}
-#tab .tab_title,#tab .title{height: 35px;line-height: 45px;margin-left: 1px}
-#tab .tab_content,#tab .content{padding:10px;height: 150px;text-align: center}
-#tab .part{width: 100px;margin:0 10px;display: inline-block;text-align: center}
-#tab .part{*display: inline}
-#tab .num{font-size:55px;}
-#tab .more{margin:10px 0;width: 60px;height: 30px;text-align:center;line-height: 30px;float: right;color:#ffffff;background: #9cc813}
+#tab .title{width: 115px;float: left;}
+#tab .tab_title,#tab .title{height: 40px;margin-left: 1px}
+#tab .tab_content,#tab .content{padding:0px;height: 180px;text-align: center}
+#tab .content .part{position:relative;width: 190px;margin:10px;display:inline-block;text-align: center}
+#tab .content .part{*display: inline}
+#tab .content .num{font-size:72px;}
+#tab .content .text{font-size:24px;}
+#tab .content .text a{color: #000000}
+#tab .more{margin:5px 0;width: 65px;height: 30px;text-align:center;line-height: 30px;float: right;color:#ffffff;background: #9cc813}
+#tab .more a{color: #ffffff}
 .bg_color{background:#fdedee;}
 .font_yellow{color:#ed6d00;}
+.font_yellow a{color:#ed6d00;}
 .font_green{color:#9cc813;}
+.font_green a{color:#9cc813;}
 .font_blue{color:#1dbae5;}
+.font_blue a{color:#1dbae5;}
 .font_gray{color:#bf9e5b;}
+.font_gray a{color:#bf9e5b;}
 .font_pink{color:#e4015a;}
+.font_pink a{color:#e4015a;}
 
 /*圆角CSS*/
 .b1,.b2,.b3,.b4,.b{display:block;overflow:hidden;}
@@ -71,4 +87,4 @@ body{padding:5px;font-family:"Microsoft Yahei", "微软雅黑", Tahoma, Arial, s
 .b3{margin:0 2px;}
 .b4{margin:0 1px;}
 .d1{}
-.k {height:31px;line-height: 31px;text-align: center;}
+.k {height:35px;line-height: 35px;text-align: center;font-size: 19px}

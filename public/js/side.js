@@ -1,8 +1,6 @@
 /*
  Plugin developed by: wangdongxing
  */
-function refresh(){
-}
 (function ($) {
     $.fn.bxCarousel = function (options) {
         var defaults = {move: 4, display_num: 4, speed: 500, margin: 0, auto: false, auto_interval: 2000, auto_dir: 'next', auto_hover: false, next_text: 'next', next_image: '', prev_text: 'prev', prev_image: '', controls: true};
@@ -19,8 +17,8 @@ function refresh(){
             var clicked = false;
             li.css({'float': 'left', 'listStyle': 'none', 'marginRight': options.margin});
             var ow = li.outerWidth(true);
-//            var wrap_width = (ow * options.display_num) - options.margin;
-            var wrap_width =$(".panel:eq(0)").width() -74 - options.margin;
+            var wrap_width = (ow * options.display_num) - options.margin;
+//            var wrap_width =$(".panel:eq(0)").width() -74 - options.margin;
             var seg = ow * options.move;
             $this.wrap('<div class="bx_container"></div>').width(999999);
             if (options.controls) {
@@ -41,14 +39,12 @@ function refresh(){
             $this.parent().siblings('.next').click(function () {
                 slide_next();
                 clearInterval(j);
-                refresh();
                 clicked = true;
                 return false;
             });
             $this.parent().siblings('.prev').click(function () {
                 slide_prev();
                 clearInterval(j);
-                refresh();
                 clicked = true;
                 return false;
             });
@@ -162,6 +158,19 @@ function refresh(){
                     }
                 }
             }
+            $(".bx_wrap a.prev").css({"opacity":"0"});
+            $(".bx_wrap a.next").css({"opacity":"0"});
+            $(".bx_wrap a.prev").hover(function(){
+                $(this).animate({"opacity":"1.0"});
+            },function(){
+                $(this).animate({"opacity":"0"});
+            });
+            $(".bx_wrap a.next").hover(function(){
+                $(this).animate({"opacity":"1.0"});
+            },function(){
+                $(this).animate({"opacity":"0"});
+            });
+
         });
     }
 })(jQuery);
