@@ -4,14 +4,17 @@
     <title></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="public/css/style.css">
-    <script type="text/javascript" src="public/js/jquery.min.js"></script>
+    <script type="text/javascript" src="public/js/jquery.1.8.2.js"></script>
     <script language="JavaScript">
+        //若想扩展，直接复制 tab标题和单页即可，JS代码不用改动
         $(function(){
             $("a.title").click(function(){
+
                 $("a.title").attr("clicked","0");
                 $(".k,.d1").removeClass("bg_color");
                 $(this).find(".k,.d1").addClass("bg_color");
                 $(this).attr("clicked","1");
+
                 var clickNum=0;
                 var title_len=$("a.title").length;
                 for(var i=0;i<title_len;i++){
@@ -19,6 +22,7 @@
                         clickNum=i;
                     }
                 }
+
                 var con_len=$(".content").length;
                 for(var i=0;i<con_len;i++){
                     $(".content").eq(i).hide();
