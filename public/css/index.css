@@ -5,18 +5,20 @@ body{
 
 .header{
 	color: rgb(200,22,35);
+	min-width: 1180px;
 }
 
 .title_left{
-	font-size:42px;
+	font-size:38px;
 	font-weight: bold;
 	float:left;
-	padding-top:23px;
+
 }
 
 .title_right{
 	float:right;
-
+	margin-right: 16px;
+	text-align: right;
 }
 
 .title_right_1{
@@ -36,28 +38,29 @@ body{
 	clear:both;
 	margin-top: 4px;
 	font-weight: bold;
-	font-size: 21px;
+	font-size: 20px;
+	color: #a6a6a6;
 }
 
 .sep{
 	clear: both;
-	border-bottom:  rgb(200,22,35) solid 1px;
-	line-height: 6px;
+	border-bottom:  rgb(200,22,35) solid 0px;
+	line-height: 26px;
 }
 
 .content{
-	min-width: 1280px;
+	min-width: 1180px;
 }
 
 .login{
-	margin-top:270px;
-	margin-left:50px;
+	margin-top:260px;
+	
 	width:370px;
 	float:left;
 }
 
 .login input{
-	width:230px;
+	width:300px;
 	height:38px;
 	font-size: 18px;
 	font-family: "微软雅黑";
@@ -73,13 +76,13 @@ body{
 
 .login .image1{
 	margin-left: 5px;
-	width: 100px;
+	width: 120px;
 	border:0;
 }
 
 .login .image2{
-	margin-left: 3px;
-	width: 100px;
+	margin-left: 20px;
+	width: 120px;
 	border:0;
 }
 
@@ -87,7 +90,7 @@ body{
 	margin-top:10px;
 	font-size:12px;
 	color:rgb(166,166,166);
-	margin-left:72px;
+	margin-left:132px;
 }
 
 .login_problem .online_support a{
@@ -103,13 +106,13 @@ body{
 .image_gallery{
 	width:720px;
 	float:right;
-	margin-right: 40px;
+	
 	position: relative;
 
 }
 
 .image_gallery > div {
-	width:740px;
+	width:710px;
 	height: 440px;
 	
 	overflow: hidden;
@@ -140,6 +143,9 @@ body{
 	position: absolute;
 }
 
+.image_gallery .grid img{
+	border: 0;
+}
 .image_gallery .grid > div > div.box1{
 	
 	
@@ -148,6 +154,31 @@ body{
 .image_gallery .grid > div > div.box2{
 	
 
+}
+
+.image_gallery .grid > div > div.cover{
+	position: absolute;
+	top:0;
+	background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.image_gallery .grid > div > div.cover > div.text1{
+	color:white;
+	margin-top:50px;
+	width:230px;
+	margin-left:8px;
+	margin-right:auto;
+}
+
+.image_gallery .grid > div > div.cover > div.text2{
+	color:white;
+	text-align: right;
+	width:220px;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 .image_gallery image{
