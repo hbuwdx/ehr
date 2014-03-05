@@ -6,6 +6,7 @@ body{
 .header{
 	color: rgb(200,22,35);
 	min-width: 1180px;
+	margin-left:14px;
 }
 
 .title_left{
@@ -53,14 +54,15 @@ body{
 }
 
 .login{
-	margin-top:260px;
-	
+	/*margin-top:260px;*/
+	margin-top:10px;
+	margin-left:14px;
 	width:370px;
 	float:left;
 }
 
 .login input{
-	width:300px;
+	width:330px;
 	height:38px;
 	font-size: 18px;
 	font-family: "微软雅黑";
@@ -81,8 +83,8 @@ body{
 }
 
 .login .image2{
-	margin-left: 20px;
-	width: 120px;
+	margin-left: 40px;
+	width: 140px;
 	border:0;
 }
 
@@ -90,7 +92,7 @@ body{
 	margin-top:10px;
 	font-size:12px;
 	color:rgb(166,166,166);
-	margin-left:132px;
+	margin-left:162px;
 }
 
 .login_problem .online_support a{
@@ -102,6 +104,22 @@ body{
 	color:rgb(166,166,166);
 
 }
+
+
+.login .func{width:550px;margin-top:10px;}
+.login .func_item{float:left;}
+.login .func .grey_back{border:0px solid red; height:180px;width:85px;background-color: #666666;margin-left:3px;}
+.login .func .grey_back div{padding-top:55px;}
+.login .func .grey_back div img{border:0;}
+.login .func .color_font_1{border:0px solid red;height:45px;width:85px;margin-left:3px;background-color: #33CC99}
+.login .func .color_font_2{border:0px solid red;height:45px;width:85px;margin-left:3px;background-color:#c81623}
+.login .func .color_font_3{border:0px solid red;height:45px;width:85px;margin-left:3px;background-color:#ed6d00}
+.login .func .color_font_4{border:0px solid red;height:45px;width:85px;margin-left:3px;background-color:#bf9d5b}
+.login .func .color_font_5{border:0px solid red;height:45px;width:85px;margin-left:3px;background-color:#1eb9e6}
+
+.login .func .color_font_1 div,.login .func .color_font_2 div,.login .func .color_font_3 div,.login .func .color_font_4 div,.login .func .color_font_5 div
+{font-size:16px;color:white;font-weight: bold;padding-top:10px;padding-left:10px;}
+
 
 .image_gallery{
 	width:720px;
